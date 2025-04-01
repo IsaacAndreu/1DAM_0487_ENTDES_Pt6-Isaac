@@ -17,5 +17,7 @@ jobs:
         java-version: '11'
         distribution: 'adopt'
 
-    - name: Compile and Test with Maven
-      run: mvn -B clean verify
+    - name: Build and test with Maven
+      run: |
+        cd refactoring
+        mvn -B clean verify
